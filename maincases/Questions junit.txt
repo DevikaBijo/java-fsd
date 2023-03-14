@@ -1,0 +1,16 @@
+				               Junit
+  
+1)write a java program to check whether a given number is odd or even, and test the program.
+
+2)write a java program to count the  vowels of a given string,and test the program.
+
+3)The employee who joined in the organization within 80 days will receive 5 gold coins.Employee who joined in 172 days will get 3 gold coins.Employee who joined 266 days will get 1 gold coin,after that will receive zero coins.
+  write a testcase.
+
+4)Consider there is a textile industry.Mr kevin is the ceo of the company,Mr sagar is the architect for the organization.During the discusiion about company profit or loss they wanted to design an application.
+  if they gave the date,it should display the total tshirt,garnaments counts, time. Implement with java8 or java7 with TDD Approach.
+
+5)Find the state and district of a registration vehicle  and check  whether a vehicle number is in proper order.
+
+6)Count the number of times a particular word repeated on a list.
+
