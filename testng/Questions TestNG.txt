@@ -1,0 +1,19 @@
+							TestNG
+
+1)Create name,age department for an employee using java and test using testng.
+
+2) SalesMaterial
+
+viswasamudra is a company ,they need a software to develop the application for the sales team to communicate with the customers
+There are two types of category for price , ranging with material 1sqft=2000rs ,without material 900rs this prices are for hyderabd location
+ 
+cities        price_with_material       price_without_material
+
+tvm           1600                      800
+chennai       1800                      1000
+mumbai        2500                      1200
+kochi         1800                      1200
+
+whwn a customer type his city and sqfeet he need to get the total amount for the construction.write a java8 program and implement the testng.
+write a sql query.
+
