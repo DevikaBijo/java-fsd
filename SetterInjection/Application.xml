@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id ="demo" class="ustbatchno3.SetterInjection.Roles" > 
+
+<property name ="Charactername" value="devika" ></property>
+<property name= "Responsibility" value="employee"></property>
+	
+	
+</bean>
+
+<bean id ="demo2" class="ustbatchno3.SetterInjection.Roles" > 
+
+<property name ="Charactername" value="devika" ></property>
+<property name= "Responsibility" value="daughter"></property>
+
+	
+	
+</bean>
+
+
+<bean id ="demo3" class="ustbatchno3.SetterInjection.Roles" > 
+
+<property name ="Charactername" value="devika" ></property>
+<property name= "Responsibility" value="sister"></property>
+
+	
+	
+</bean>
+</beans>
