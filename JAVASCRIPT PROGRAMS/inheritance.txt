@@ -1,0 +1,65 @@
+class Person {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  getBasicInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}`);
+  }
+}
+
+// Child class - Student
+class Student extends Person {
+  constructor(name, age, gender, school, grade) {
+    super(name, age, gender);
+    this.school = school;
+    this.grade = grade;
+  }
+
+  getStudentInfo() {
+    console.log(`School: ${this.school}, Grade: ${this.grade}`);
+  }
+}
+
+// Child class - Employee
+class Employee extends Person {
+  constructor(name, age, gender, company, position) {
+    super(name, age, gender);
+    this.company = company;
+    this.position = position;
+  }
+
+  getEmployeeInfo() {
+    console.log(`Company: ${this.company}, Position: ${this.position}`);
+  }
+}
+
+// Child class - Father
+class Father extends Person {
+  constructor(name, age, gender, numOfChildren, occupation) {
+    super(name, age, gender);
+    this.numOfChildren = numOfChildren;
+    this.occupation = occupation;
+  }
+
+  getFatherInfo() {
+    console.log(`Number of Children: ${this.numOfChildren}, Occupation: ${this.occupation}`);
+  }
+}
+
+// Create objects of child classes
+const student1 = new Student("John Doe", 18, "Male", "XYZ High School", "10th Grade");
+const employee1 = new Employee("Jane Smith", 30, "Female", "ABC Company", "Manager");
+const father1 = new Father("Bob Johnson", 50, "Male", 3, "Engineer");
+
+// Call methods to display basic information and child-specific information
+student1.getBasicInfo();
+student1.getStudentInfo();
+
+employee1.getBasicInfo();
+employee1.getEmployeeInfo();
+
+father1.getBasicInfo();
+father1.getFatherInfo();	

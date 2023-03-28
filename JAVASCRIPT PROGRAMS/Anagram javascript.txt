@@ -1,0 +1,26 @@
+ANAGRAM
+*******
+
+
+function isAnagram(str1, str2) {
+  // Removes all non-alphabetic characters and converts to lowercase
+  str1 = str1.replace(/[^a-zA-Z]/g, "").toLowerCase();
+  str2 = str2.replace(/[^a-zA-Z]/g, "").toLowerCase();
+
+  // Checks if the lengths of the strings are equal
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+  // Sorts the characters in each string and compares them
+  return str1.split('').sort().join('') === str2.split('').sort().join('');
+}
+
+// Example usage:
+const string1 = "vile";
+const string2 = "evil";
+if(isAnagram(string1, string2)) {
+  console.log(`${string1} and ${string2} are anagrams.`);
+} else {
+  console.log(`${string1} and ${string2} are not anagrams.`);
+}

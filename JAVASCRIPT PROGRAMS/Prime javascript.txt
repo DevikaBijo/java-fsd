@@ -1,0 +1,34 @@
+********
+PROGRAMS
+********
+
+
+PRIME NUMBER
+************
+
+function isPrime(num) {
+  // Returns true if a number is prime, otherwise false
+  for(let i = 2; i < num; i++) {
+    if(num % i === 0) {
+      return false;
+    }
+  }
+  return num !== 1 && num !== 0;
+}
+
+
+function findPrimes(nums) {
+  // Returns an array of all the prime numbers in a given array
+  const primes = [];
+  for(let i = 0; i < nums.length; i++) {
+    if(isPrime(nums[i])) {
+      primes.push(nums[i]);
+    }
+  }
+  return primes;
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const primes = findPrimes(numbers);
+console.log(primes);

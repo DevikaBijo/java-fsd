@@ -1,0 +1,25 @@
+function romanToNum(roman) {
+  const romanToNumMap = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000
+  };
+  let result = 0;
+  for (let i = 0; i < roman.length; i++) {
+    const currentVal = romanToNumMap[roman[i]];
+    const nextVal = romanToNumMap[roman[i + 1]];
+    if (nextVal && nextVal > currentVal) {
+      result += nextVal - currentVal;
+      i++;
+    } else {
+      result += currentVal;
+    }
+  }
+  return result;
+        } 
+  console.log(romanToNum('XIV')); // Output: 14
+console.log(romanToNum('LXIX')); // Output: 69

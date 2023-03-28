@@ -1,0 +1,10 @@
+function reverseString(str) {
+  // Check if string contains non-ASCII characters
+  if (!/^[\x00-\x7F]*$/.test(str)) {
+    throw new Error('Input contains non-ASCII characters.');
+  }
+  // Reverse the string using Array.reverse() and String.join()
+  return str.split('').reverse().join('');
+}
+console.log(reverseString('hello')); // Output: 'olleh'
+console.log(reverseString('world')); // Output: 'dlrow'
